@@ -44,8 +44,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ueberdosis/tiptap.git",
-    "directory": "packages/extension-hashtag"
+    "url": "git+https://github.com/ogzhnaydn38/tiptap-extension-hashtag.git"
   },
   "homepage": "https://github.com/ogzhnaydn38",
   "keywords": [
