@@ -1,0 +1,78 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/extension-hashtag.cjs.production.min.js",
+  "module": "dist/extension-hashtag.esm.js",
+  "types": "dist/index.d.ts",
+  "umd": "dist/extension-hashtag.umd.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {
+    "@tiptap/core": "^2.0.0-beta.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "@ogzhnaydn/extension-hashtag",
+  "author": "Oğuzhan Aydın",
+  "description": "hashtag extension for tiptap",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/ueberdosis"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ueberdosis/tiptap.git",
+    "directory": "packages/extension-hashtag"
+  },
+  "homepage": "https://github.com/ogzhnaydn38",
+  "keywords": [
+    "tiptap",
+    "tiptap extension",
+    "tiptap hashtag extension"
+  ],
+  "size-limit": [
+    {
+      "path": "dist/extension-hashtag.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/extension-hashtag.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^5.0.5",
+    "husky": "^7.0.2",
+    "size-limit": "^5.0.5",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.3",
+    "@tiptap/suggestion": "^2.0.0-beta.71"
+  },
+  "dependencies": {
+    "@tiptap/core": "^2.0.0-beta.118"
+  }
+}
